@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rl_curve_bg"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:elevation="10dp">
+
+    <ImageView
+        android:id="@+id/ship_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/shipping_icon" />
+
+    <TextView
+        android:id="@+id/product_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ship_iv"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="product name"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/product_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name_tv"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/ship_iv"
+        android:fontFamily="@font/poppins"
+        android:gravity="center"
+        android:text="25"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/product_price_tv">
+
+        <ImageView
+            android:id="@+id/icon_sample_order"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/order_icon_sample" />
+
+        <TextView
+            android:id="@+id/sample_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon_sample_order"
+            android:fontFamily="@font/poppins"
+            android:text="Order"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/order_id_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sample_tv"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/icon_sample_order"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="#232"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/icon_sample_order_date"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/order_icon_sample"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/sample_tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/icon_sample_order_date"
+            android:fontFamily="@font/poppins"
+            android:text="Ordered On"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/ordered_date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/sample_tv"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/icon_sample_order_date"
+            android:fontFamily="@font/poppins"
+            android:textColor="@color/black"
+            android:text="#232"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
